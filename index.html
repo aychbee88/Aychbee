@@ -186,7 +186,7 @@ footer{padding-block:28px 40px;border-top:1px solid var(--line);font-size:13px;c
           <li>Complimentary UK delivery</li>
           <li>A perfect introduction or gift</li>
         </ul>
-        <a class="btn btn-outline" href="#shop" data-checkout="oneoff">Buy once</a>
+        <a href="https://buy.stripe.com/14A4greSMh0u4hFfu07Vm01" class="btn btn-outline once-button" data-checkout="oneoff">Buy Now</a>
       </article>
       <article class="plan plan-feature">
         <div class="plan-tag">The 6-month transformation · Save 35%</div>
@@ -276,8 +276,8 @@ footer{padding-block:28px 40px;border-top:1px solid var(--line);font-size:13px;c
 <script>
 /* Paste your checkout links here (e.g. Stripe Payment Links). Until then, the buttons scroll to the Shop section. */
 var CHECKOUT = {
-  oneoff: "",     /* £19.99 single box */
-  subscribe: ""   /* £12.99/month, 6-month minimum */
+  oneoff: "https://buy.stripe.com/14A4greSMh0u4hFfu07Vm01",     /* £19.99 single box (LIVE) */
+  subscribe: ""   /* £12.99/month, 6-month minimum: paste live link here */
 };
 document.querySelectorAll('[data-checkout]').forEach(function(a){
   var url = CHECKOUT[a.getAttribute('data-checkout')];
