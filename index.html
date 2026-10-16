@@ -198,7 +198,7 @@ footer{padding-block:28px 40px;border-top:1px solid var(--line);font-size:13px;c
           <li>Complimentary UK delivery, always</li>
           <li>Six months of consistent care for visibly smoother, brighter-looking eyes</li>
         </ul>
-        <a class="btn" href="#shop" data-checkout="subscribe">Begin my transformation</a>
+        <a href="https://buy.stripe.com/00w28j5icaC64hFbdK7Vm02" class="btn begin-my-transformation" data-checkout="subscribe">Buy Now</a>
         <p class="plan-terms">6-month minimum term: 6 monthly payments of £12.99 (£77.94 in total). Rolls on monthly after 6 months and can then be cancelled at any time. Your statutory 14-day cancellation rights are not affected.</p>
       </article>
     </div>
@@ -277,7 +277,7 @@ footer{padding-block:28px 40px;border-top:1px solid var(--line);font-size:13px;c
 /* Paste your checkout links here (e.g. Stripe Payment Links). Until then, the buttons scroll to the Shop section. */
 var CHECKOUT = {
   oneoff: "https://buy.stripe.com/14A4greSMh0u4hFfu07Vm01",     /* £19.99 single box (LIVE) */
-  subscribe: ""   /* £12.99/month, 6-month minimum: paste live link here */
+  subscribe: "https://buy.stripe.com/00w28j5icaC64hFbdK7Vm02"   /* £12.99/month, 6-month minimum (LIVE) */
 };
 document.querySelectorAll('[data-checkout]').forEach(function(a){
   var url = CHECKOUT[a.getAttribute('data-checkout')];
